@@ -5,6 +5,7 @@ import pinia from './store'
 import router from './router'
 import useSettingsStore from './store/modules/settings'
 import registerWindowComponent from '@/views/windows/registerWindowComponent'
+import registerChatComponent from '@/views/Chat/registerChatComponent'
 
 // 自定义指令
 import directive from '@/utils/directive'
@@ -27,6 +28,7 @@ app.use(ElementPlus)
 app.use(pinia)
 app.use(router)
 registerWindowComponent(app)
+registerChatComponent(app)
 directive(app)
 
 app.mount('#app')
