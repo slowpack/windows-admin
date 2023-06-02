@@ -2,7 +2,7 @@ import WindowExample from './modules/window.example'
 
 const menu = [
   {
-    title: '演示',
+    title: 'gd',
     icon: 'sidebar-default',
     children: [
       WindowExample,
