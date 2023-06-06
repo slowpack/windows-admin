@@ -1,29 +1,16 @@
+import { addLatencyToWebsites, websites } from './useping'
+
+addLatencyToWebsites(websites)
+
+// eslint-disable-next-line no-console
+console.log(websites)
+
+const urlList = fetch('https://www.baidu.com').then(res => res.text())
+const children = urlList.map((url, index) => ({ title: `${index}⚡️`, windowName: `OldBaby${index}`, params: { url } }))
 const menus: Menu.recordRaw = {
   title: 'some',
   icon: 'icons8-chatgpt',
-  children: [
-    {
-      title: '1⚡️',
-      windowName: 'OldBaby',
-      params: {
-        url: 'https://www.baidu.com',
-      },
-    },
-    {
-      title: '2⚡️',
-      windowName: 'OldBaby',
-      params: {
-        url: 'https://www.douban.com',
-      },
-    },
-    {
-      title: '3⚡️',
-      windowName: 'OldBaby',
-      params: {
-        url: 'https://www.bing.com',
-      },
-    },
-  ],
+  children,
 }
 
 export default menus

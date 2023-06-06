@@ -1,6 +1,7 @@
-const ping = require('ping')
+// const ping = require('ping')
+import ping from 'ping'
 
-const websites
+export const websites
   = [
     {
       href: 'Jinshutuan.com',
@@ -118,7 +119,7 @@ const websites
     },
   ]
 
-async function addLatencyToWebsites(websites) {
+export async function addLatencyToWebsites(websites) {
   const getLatency = async (url) => {
     try {
       const response = await ping.promise.probe(url)
@@ -137,8 +138,8 @@ async function addLatencyToWebsites(websites) {
   websites.forEach((website, index) => {
     const latency = latencies[index]
     website.latency = latency
-    console.log(`${website.href} latency: ${latency === -1 ? 'unknown' : `${latency}ms`}`)
+    // console.log(`${website.href} latency: ${latency === -1 ? 'unknown' : `${latency}ms`}`)
   })
 }
 
-addLatencyToWebsites(websites)
+// addLatencyToWebsites(websites)
