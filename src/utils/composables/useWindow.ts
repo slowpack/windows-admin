@@ -1,7 +1,7 @@
 import useWindowStore from '@/store/modules/window'
 import eventBus from '@/utils/eventBus'
 
-export default function useAuth() {
+export default function useWindow() {
   const windowStore = useWindowStore()
 
   // 新增窗口

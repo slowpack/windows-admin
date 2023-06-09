@@ -3,6 +3,7 @@
   "rules": {
     "eslint-comments/no-unlimited-disable": "off",
     "curly": ["error", "all"],
+    "no-console": "off",
     "vue/component-tags-order": ["error", {
       "order": ["i18n", "script", "template", "style"]
     }]
