@@ -1,17 +1,18 @@
 const menus: Menu.recordRaw = {
-  title: '窗口功能',
+  title: '开源大模型',
   icon: 'sidebar-window',
   children: [
     {
-      title: '打开新窗口',
-      windowName: 'WindowExampleAdd',
+      title: 'chatGLM-6B⭐⭐⭐',
+      windowName: 'SparkDesk',
+      params: { url: 'https://xinghuo.xfyun.cn/desk' },
     },
     {
-      title: '关闭窗口',
+      title: 'llama 65b⭐⭐⭐',
       windowName: 'WindowExampleRemove',
     },
     {
-      title: '带参窗口',
+      title: 'MOSS⭐⭐⭐',
       windowName: 'WindowExampleParams',
     },
   ],

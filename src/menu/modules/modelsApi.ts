@@ -1,5 +1,5 @@
 const menus: Menu.recordRaw = {
-  title: '商业大模型',
+  title: '大模型API版',
   icon: 'sidebar-window',
   children: [
     {
@@ -8,16 +8,16 @@ const menus: Menu.recordRaw = {
       params: { url: 'https://xinghuo.xfyun.cn/desk' },
     },
     {
-      title: 'Claude⭐⭐⭐⭐',
+      title: '浪潮-源1.0⭐⭐⭐',
       windowName: 'WindowExampleRemove',
     },
     {
-      title: 'Bing⭐⭐⭐⭐',
+      title: 'GPT4⭐⭐⭐⭐⭐',
       windowName: 'WindowExampleParams',
     },
     {
-      title: '360智脑⭐⭐⭐⭐',
-      windowName: 'https://ai.360.cn/invite',
+      title: 'miniMax⭐⭐⭐⭐',
+      windowName: 'https://api.minimax.chat/',
     },
   ],
 }
