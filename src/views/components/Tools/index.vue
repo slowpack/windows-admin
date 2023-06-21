@@ -44,7 +44,11 @@ function userCommand(command: 'setting' | 'hotkeys' | 'logout') {
 }
 
 function pro() {
-  window.open('https://one-step-admin.gitee.io/pro-example', 'top')
+  // window.open('https://one-step-admin.gitee.io/pro-example', 'top')
+  appWindow.add({
+    title: '测试',
+    name: 'Test',
+  })
 }
 </script>
 
