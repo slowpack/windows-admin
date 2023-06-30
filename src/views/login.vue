@@ -201,12 +201,12 @@ function testAccount(account: string) {
         <el-button :loading="loading" type="primary" size="large" style="width: 100%;" @click.prevent="handleLogin">
           登录
         </el-button>
-        <div class="sub-link">
+        <!-- <div class="sub-link">
           <span class="text">还没有帐号?</span>
           <el-link type="primary" :underline="false" @click="formType = 'register'">
             创建新帐号
           </el-link>
-        </div>
+        </div> -->
         <div style="margin-top: 20px; margin-bottom: -20px; text-align: center;">
           <el-divider>演示账号一键登录</el-divider>
           <el-button type="primary" size="small" plain @click="testAccount('admin')">

@@ -13,9 +13,11 @@ function toLogin() {
     },
   })
 }
+console.log((import.meta.env.DEV && import.meta.env.VITE_OPEN_PROXY === 'true') ? '/proxy/' : import.meta.env.VITE_APP_API_BASEURL)
 
 const api = axios.create({
-  baseURL: (import.meta.env.DEV && import.meta.env.VITE_OPEN_PROXY === 'true') ? '/proxy/' : import.meta.env.VITE_APP_API_BASEURL,
+  // baseURL: (import.meta.env.DEV && import.meta.env.VITE_OPEN_PROXY === 'true') ? '/proxy/' : import.meta.env.VITE_APP_API_BASEURL,
+  baseURL: 'http://localhost:5050',
   timeout: 10000,
   responseType: 'json',
 })
@@ -36,6 +38,7 @@ api.interceptors.request.use(
       //   arrayFormat: 'brackets',
       // })
     }
+    console.log(request.baseURL)
     return request
   },
 )
