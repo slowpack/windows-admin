@@ -3,7 +3,7 @@ export default [
     url: '/mock/user/login',
     method: 'post',
     response: ({ body }: any) => {
-      return {
+      const res = {
         error: '',
         status: 1,
         data: {
@@ -12,6 +12,8 @@ export default [
           failure_time: Math.ceil(new Date().getTime() / 1000) + 24 * 60 * 60,
         },
       }
+      console.log(res)
+      return res
     },
   },
   {
