@@ -2,6 +2,7 @@
 defineProps({
   params: {
     type: Object as PropType<{ url: string }>,
+    required: true,
   },
 })
 </script>

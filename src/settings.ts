@@ -7,7 +7,7 @@ const globalSettings: Settings.all = {
     enableAppSetting: false,
   },
   menu: {
-    baseOn: 'frontend',
+    baseOn: 'backend',
     menuMode: 'side',
     switchMainMenuAndOpenWindow: false,
     subMenuUniqueOpened: true,
